@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>Image:</strong>
+  <%= @book.image %>
+</p>
+
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @book.price %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @book.publisher %>
+</p>
+
+<p>
+  <strong>Publication day:</strong>
+  <%= @book.publication_day %>
+</p>
+
+<p>
+  <strong>Isbn:</strong>
+  <%= @book.isbn %>
+</p>
+
+
+<%= link_to '編集', edit_book_path(@book) %> |
+<%= link_to '戻る', books_path %>
