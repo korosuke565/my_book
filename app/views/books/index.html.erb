@@ -25,7 +25,7 @@
         <td><%= book.author %></td>
         <td><%= number_to_currency(book.price, unit: '￥',precision: 0) %></td>
         <td><%= book.publisher %></td>
-        <td><%= book.publication_day %></td>
+        <td><%= book.publication_day.strftime("%Y/%m/%d") %></td>
         <td><%= book.isbn %></td>
         <td><%= link_to '閲覧', book, class:"btn btn-primary btn-xs" %></td>
         <td><%= link_to '編集', edit_book_path(book), class:"btn btn-primary btn-xs" %></td>
